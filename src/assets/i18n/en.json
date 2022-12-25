@@ -2,5 +2,8 @@
     "name":"name",
     "lastName":"Last name",
     "oto":"Oto",
-    "avlokhashvili":"Avlokhashvili"
+    "avlokhashvili":"Avlokhashvili",
+    "login":"Login",
+    "save":"Save",
+    "register":"Register"
 }

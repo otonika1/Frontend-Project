@@ -1,0 +1,7 @@
+{
+
+    "profile": { "name": "typicode" },
+    "users": [
+        { "email":"admin", "password":"admin", "token":"1" }
+      ]
+  }
