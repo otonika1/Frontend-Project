@@ -1,0 +1,10 @@
+<div class="d-flex justify-content-between">
+    <select class="form-select" style="width: 10%;" (change)="changeLg($event.target)">
+        <option  value="en" [selected]="lang == 'en'">EN</option>
+        <option  value="geo" [selected]="lang == 'geo'">GEO</option>
+    </select>
+    <div >
+        <!-- logic have to be added, it should appear only when token will be presented -->
+        <button class="btn btn-danger" (click)="logout()">Log out</button>
+    </div>
+</div>

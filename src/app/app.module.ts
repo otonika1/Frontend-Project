@@ -10,6 +10,7 @@ import { AuthComponent } from './auth/auth.component';
 import { AngularFireModule} from '@angular/fire/compat'
 import { FireService } from './fire.service';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
@@ -18,7 +19,8 @@ export function HttpLoaderFactory(http: HttpClient) {
   declarations: [
     AppComponent,
     InfoComponent,
-    AuthComponent
+    AuthComponent,
+    NavBarComponent
   ],
   imports: [
     HttpClientModule,
@@ -40,6 +42,7 @@ export function HttpLoaderFactory(http: HttpClient) {
       messagingSenderId: "1089688823758",
       appId: "1:1089688823758:web:a14c930272fd76fb4c2d9f"
     }),
+    
   ],
   exports:[TranslateModule],
   providers: [HttpClient,FireService],

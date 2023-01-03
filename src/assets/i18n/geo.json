@@ -5,5 +5,11 @@
     "avlokhashvili":"ავლოხაშვილი",
     "login":"ლოგინი",
     "save":"შენახვა",
-    "register":"რეგისტრაცია"
+    "register":"რეგისტრაცია",
+    "password-invalid":"პაროლი არ არის ვალიდური",
+    "email-invalid":"ემაილი არ არის ვალიდური",
+    "nonExistent":"ემაილი არ არის რეგისტრირებული",
+    "email":"ემაილი",
+    "password":"პაროლი"
+
 }

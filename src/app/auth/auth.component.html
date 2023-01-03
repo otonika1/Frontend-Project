@@ -6,17 +6,21 @@
     <div *ngIf="login" class="login mt-4">
         <div class="d-flex flex-column mb-2">
             <label >
-                <span>Email</span>
+                <span>{{'email' | translate}}</span>
             </label>
-            <input class="form-control" [formControl]="email" type="text">
+            <input [ngClass]="email.invalid ? 'red-border' : ''" class="form-control shadow-none" [formControl]="email" type="email">
+            <span class="text-danger" *ngIf="email.invalid">{{'email-invalid' | translate}}</span>
         </div>
 
         <div class="d-flex flex-column mb-2">
             <label >
-                <span>Password</span>
+                <span>{{'password' | translate}}</span>
             </label>
-            <input class="form-control" [formControl]="password" type="text">
+            <input minlength="8" [ngClass]="password.invalid ? 'red-border' : ''" class="form-control shadow-none" [formControl]="password" type="password">
+            <span class="text-danger"  *ngIf="password.invalid">{{'password-invalid' | translate}}</span>
+
         </div>
+        <span class="text-danger"  *ngIf="nonExistent">{{'nonExistent' | translate}}</span>
         <div class="mt-4">
             <button class="btn btn-primary" (click)="save()">{{'save' | translate}}</button>
         </div>
@@ -48,13 +52,13 @@
             <label >
                 <span>Password</span>
             </label>
-            <input class="form-control" formControlName="password" type="text">
+            <input class="form-control" formControlName="password" minlength="8" type="password">
         </div>
         <div class="d-flex flex-column mb-2">
             <label >
                 <span>Confirm Password</span>
             </label>
-            <input class="form-control" formControlName="confirm_password" type="text">
+            <input class="form-control" formControlName="confirm_password" minlength="8" type="password">
         </div>
         <div class="mt-4">
             <button class="btn btn-primary" (click)="add()">{{'save' | translate}}</button>

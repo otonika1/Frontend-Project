@@ -5,5 +5,10 @@
     "avlokhashvili":"Avlokhashvili",
     "login":"Login",
     "save":"Save",
-    "register":"Register"
+    "register":"Register",
+    "password-invalid":"Invalid password",
+    "email-invalid":"Invalid Email",
+    "nonExistent":"Email is not registered",
+    "email":"Email",
+    "password":"Password"
 }

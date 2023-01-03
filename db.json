@@ -1,7 +1,19 @@
 {
-
-    "profile": { "name": "typicode" },
-    "users": [
-        { "email":"admin", "password":"admin", "token":"1" }
-      ]
-  }
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@gmail.com",
+      "password": "12345678",
+      "token": "1"
+    },
+    {
+      "name": "Oto",
+      "lastname": "Avlokhashvili",
+      "email": "oto.avloxashvili10@gmail.com",
+      "password": "12345678",
+      "confirm_password": "12345678",
+      "token": "dfb75636-3f4e-480e-ba41-e7da6e94aa2297.55007380076353",
+      "id": 2
+    }
+  ]
+}

@@ -11,10 +11,13 @@ export class AuthService {
 
   constructor(    private http: HttpClient,
     private router: Router,) { }
+  //getuser
   getuser(){
     return this.http.get(`${environment.BaseUrl}users`)
   }
-  create(email:any,password:any,token:any){
-    return this.http.post(`${environment.BaseUrl}/users`,{email:email,password:password,token:token})
+  //post user
+  create(form:any){
+    
+    return this.http.post(`${environment.BaseUrl}users`,form)
   }
 }
